@@ -61,11 +61,11 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="Pathfinding.JsonFx">
-      <HintPath>Assets\AstarPathfindingProject\Plugins\JsonFx\Pathfinding.JsonFx.dll</HintPath>
-    </Reference>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
       <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.JsonFx">
+      <HintPath>Assets\AstarPathfindingProject\Plugins\JsonFx\Pathfinding.JsonFx.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -153,11 +153,28 @@
     <Compile Include="Assets\AstarPathfindingProject\Utilities\ProfileHelper.cs" />
     <Compile Include="Assets\AstarPathfindingProject\Utilities\UnityReferenceHelper.cs" />
     <Compile Include="Assets\AstarPathfindingProject\changelog.cs" />
+    <Compile Include="Assets\Code\Common\Bean.cs" />
+    <Compile Include="Assets\Code\Common\BeanManager.cs" />
+    <Compile Include="Assets\Code\Common\Config.cs" />
+    <Compile Include="Assets\Code\Common\Singleton.cs" />
+    <Compile Include="Assets\Code\Common\SingletonMono.cs" />
     <Compile Include="Assets\Code\Game\Local\Local.cs" />
     <Compile Include="Assets\Code\Game\PathConfig\PathConfig.cs" />
     <Compile Include="Assets\Code\Game\Singleton\IBean.cs" />
-    <Compile Include="Assets\Code\Game\Singleton\Singleton.cs" />
-    <Compile Include="Assets\TestFindway.cs" />
+    <Compile Include="Assets\Code\ResourcesLoad\BundleLoader.cs" />
+    <Compile Include="Assets\Code\ResourcesLoad\ResourceAllocater.cs" />
+    <Compile Include="Assets\Code\ResourcesLoad\ResourceManager.cs" />
+    <Compile Include="Assets\Code\Test\MyComputer.cs" />
+    <Compile Include="Assets\Code\Test\PassString.cs" />
+    <Compile Include="Assets\Code\Test\TestLoad.cs" />
+    <Compile Include="Assets\Code\Test\TestUI.cs" />
+    <Compile Include="Assets\Code\UI\DlgBase.cs" />
+    <Compile Include="Assets\Code\UI\Login\DlgLogin.cs" />
+    <Compile Include="Assets\Code\UI\UIDlgManager.cs" />
+    <Compile Include="Assets\Code\UI\UIInGameMan.cs" />
+    <Compile Include="Assets\Code\UI\UIManager.cs" />
+    <Compile Include="Assets\Code\UI\UIUpdateEvent.cs" />
+    <Compile Include="Assets\Code\UI\Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
@@ -177,6 +194,9 @@
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\UI\test.txt" />
+    <None Include="Assets\codeandweb.com\Editor\SettingsTexturePackerImporter.txt" />
+    <None Include="Assets\codeandweb.com\Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>

@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: dfa87f92e454102448bf2374a1e10aa6.unity3d
+      Dependencies: {}
+    Info_1:
+      Name: ui_login.unity3d
+      Dependencies:
+        Dependency_0: dfa87f92e454102448bf2374a1e10aa6.unity3d
